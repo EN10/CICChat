@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css" />
+
+<script type="text/javascript">
+function validate(theform)
+{ if (theform.username==null || theform.username.value=="")
+    {	    alert("ERROR: Please enter Username"); return false;	}
+    else
+    {	return true;	}
+}
+</script>
+</head>
+
+<body>
+
+<div id="container" style="width:500px">
+
+<div id="header" style="background-color:white;">
+  <div align="center"><a href="index.htm"><img src="IC Logo.png" /></a></div>
+</div>
+
+<div id="content";  style="background-color:white;height:200px;width:400px;float:center;">
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<form name="input" onSubmit="return validate(this)" action="loading.php" method="POST">
+  <div align="center">Username:
+  <input type="text" name="username"/>
+  <input type="submit" value="Start" />
+  </div>
+</form>
+</div>
+
+<div id="footer" style="background-color:yellow;clear:both;text-align:center;">
+  <div align="center">Copyright © 2011 Enio.tk </div>
+</div>
+
+</div>
+ 
+</body>
+</html>	
